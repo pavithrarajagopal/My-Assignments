@@ -26,8 +26,8 @@ public class PromptAlert {
 		driver.switchTo().frame(navigate);
 		
 		//clicking the element inside frame
-	    driver.findElement(By.xpath("//button[text()='Try it']")).click();
-	    Thread.sleep(1000);
+	        driver.findElement(By.xpath("//button[text()='Try it']")).click();
+	        Thread.sleep(1000);
 		driver.switchTo().alert().sendKeys("pavithra");
 		driver.switchTo().alert().accept();
 		String text = driver.findElement(By.xpath("//p[@id='demo']")).getText();
